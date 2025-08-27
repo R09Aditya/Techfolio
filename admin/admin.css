@@ -1,0 +1,150 @@
+* {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    /* cursor: none; */
+}
+
+
+
+
+/* Header */
+.head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 3%;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cs, .workw {
+    font: 18px Syne, Bahnschrift Condensed;
+    height: 40px;
+    width: 140px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.cs:hover, .workw:hover {
+    opacity: 0.5;
+}
+
+
+
+
+
+.certification-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 24px;
+}
+
+.certification {
+    border: 2px solid #444;
+    border-radius: 12px;
+    background: #181818;
+    text-align: center;
+    box-shadow: 0 0 10px #1115;
+    padding: 18px 14px 18px 14px;
+    transition: box-shadow 0.2s;
+}
+
+.certification:hover {
+    box-shadow: 0 0 24px #6687ff33;
+}
+
+.cert-img {
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+    border: 2px solid #999;
+    border-radius: 8px;
+    background: #202020;
+    margin-bottom: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certification h2, .certification h3 {
+    margin: 8px 0 4px 0;
+    font-size: 22px;
+    color: #bddcff;
+    background-color: #181818;
+}
+
+.certification p {
+    color: #ededed;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    background-color: #181818;
+}
+
+.certification a {
+    color: #7abcf9;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.15s;
+    background-color: #181818;
+}
+
+.certification a:hover {
+    color: #3cb0fd;
+    text-decoration: underline;
+}
+
+.certification .date {
+    font-size: 13px;
+    color: #aaa;
+    margin-top: 6px;
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader img {
+    width: 300px;
+    height: 300px;
+}
+
+@media (max-width: 900px) {
+    .certification-list {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+    .cert-img {
+        width: 100%;
+        height: 180px;
+        max-width: 340px;
+    }
+}

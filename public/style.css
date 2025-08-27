@@ -1,0 +1,207 @@
+* {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Custom Cursor */
+.cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    background-color: #fff;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader img {
+    width: 300px;
+    height: 300px;
+}
+
+/* Header */
+.head {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 3%;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cs, .workw {
+    font: 18px Syne, Bahnschrift Condensed;
+    height: 40px;
+    width: 140px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.cs:hover, .workw:hover {
+    opacity: 0.5;
+}
+
+/* Video Section */
+.large {
+    position: relative;
+    width: 100%;
+    bottom: 40%;
+}
+
+.vid {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.texts {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 0 10%;
+    background-color: transparent;
+}
+
+.hh {
+    font: 70px Syne, Bahnschrift Condensed;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.br {
+    font: 30px Syne, Bahnschrift Condensed;
+    margin: 20px auto;
+    width: 100%;
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cs, .workw {
+        font-size: 16px;
+        height: 35px;
+        width: 120px;
+    }
+
+    .hh {
+        font-size: 36px;
+    }
+
+    .br {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hh {
+        font-size: 28px;
+    }
+
+    .br {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project {
+    background: #161616;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 330px;
+    box-shadow: 0 0 16px #222;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.project-img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+.project a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #44e;
+    text-decoration: none;
+    font-weight: bold;
+}
+.project a:hover {
+    color: #889aff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* cert */
