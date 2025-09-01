@@ -6,9 +6,20 @@
     cursor: none;
 }
 
-body {
-    overflow-x: hidden;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;          /* disable scrollbars */
+  overscroll-behavior: none; /* no bounce on edges */
 }
+
+body {
+  position: relative;
+  touch-action: none;        /* stops touch scrolling */
+}
+
 
 /* Custom Cursor */
 .cursor {
