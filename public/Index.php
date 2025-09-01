@@ -11,8 +11,8 @@ $portfolio = $result->fetch_assoc();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/08a1d1d5aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body onload="bigger()">
 
@@ -27,7 +27,7 @@ $portfolio = $result->fetch_assoc();
             <img src="me.jpg" class="logo" alt="">
         </a>
         <div class="button">
-            <form class="formbtn" action="Index.html"><button class="cs">Home</button></form>
+            <form class="formbtn" action="Index.php"><button class="cs">Home</button></form>
             <form class="formbtn" action="projects.php"><button class="cs">Highlights</button></form>
             <form class="formbtn" action="certifications.php"><button class="workw">Certifications</button></form>
             <form class="formbtn" action="reach.php"><button class="workw">Reach me out!</button></form>
@@ -51,6 +51,21 @@ $portfolio = $result->fetch_assoc();
                 document.getElementById('loader').style.display = 'none';
             }, 1000);
         }
+
+        // Prevent all wheel + touch scroll
+window.addEventListener('scroll', () => {
+  window.scrollTo(0, 0);
+});
+
+window.addEventListener('touchmove', e => {
+  e.preventDefault();
+}, { passive: false });
+
+window.addEventListener('wheel', e => {
+  e.preventDefault();
+}, { passive: false });
+
+
     </script>
 </body>
 </html>
