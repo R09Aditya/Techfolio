@@ -116,7 +116,7 @@ if (isset($_POST['submit'])) {
     </div>
 
     <div class="end">
-        <div class="right">
+        
             <div class="lg">
     <?php
     $socials = $conn->query("SELECT * FROM social_links ORDER BY id ASC");
@@ -127,9 +127,6 @@ if (isset($_POST['submit'])) {
         </a>
     <?php endwhile; ?>
 </div>
-            <h4 class="copy">© 2024 Aditya Sharma</h4>
-            <h4 class="copy">Designed by: Aditya Sharma</h4>
-        </div>
     </div>
 
     <script>
@@ -142,6 +139,21 @@ if (isset($_POST['submit'])) {
                 // document.getElementById('loader').style.height = 0 + 'px';
             }, 1000);
         }
+
+        // Prevent all wheel + touch scroll
+window.addEventListener('scroll', () => {
+  window.scrollTo(0, 0);
+});
+
+window.addEventListener('touchmove', e => {
+  e.preventDefault();
+}, { passive: false });
+
+window.addEventListener('wheel', e => {
+  e.preventDefault();
+}, { passive: false });
+
+
     </script>
 </body>
 </html>
